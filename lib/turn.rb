@@ -40,4 +40,3 @@ def turn(board)
     return true
   end
 end
-
