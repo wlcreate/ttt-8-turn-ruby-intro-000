@@ -40,6 +40,6 @@ def turn(board)
     return true
   else gets.strip == false
     return "1"
-    
+
   end
 end
