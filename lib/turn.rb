@@ -32,10 +32,6 @@ def move(array, index, value = "X")
   array[index] = value
 end
 
-def current_player(board)
-  turn_count(board) % 2 == 0? "X" : "O"
-end
-
 def turn(board)
   puts "Please enter 1-9:"
   user_input = gets.strip
@@ -45,14 +41,5 @@ def turn(board)
     display_board(board)
   else
     turn(board)
-  end
-end
-
-def turn_count(board)
-  counter = 0
-  board.each do |spaces|
-    if spaces == "X" || spaces == "O"
-      counter += 1
-    end
   end
 end
