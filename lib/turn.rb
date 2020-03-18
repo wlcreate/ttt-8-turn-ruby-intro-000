@@ -41,6 +41,6 @@ def turn(board)
     display_board(board)
   else valid_move?(board, index)
     return false
-    user_input = gets.strip
+    turn(board)
   end
 end
