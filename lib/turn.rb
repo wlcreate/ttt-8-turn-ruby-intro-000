@@ -28,7 +28,7 @@ def input_to_index(user_input)
   user_input.to_i - 1
 end
 
-def move(array, index, value = "X")
+def move(board, index, value = "X")
   array[index] = value
 end
 
@@ -37,7 +37,7 @@ def turn(board)
   user_input = gets.strip
   index = input_to_index(user_input)
   if valid_move?(board, index) == true
-    move(array, index, value = "X")
+    move(board, index, value = "X")
     display_board(board)
   else valid_move?(board, index) == false
     turn(board)
