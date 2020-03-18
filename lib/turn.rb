@@ -50,8 +50,8 @@ end
 
 def turn_count(board)
   counter = 0
-  board.each |space|
-    if space == "X" || space == "O"
+  board.each do |spaces|
+    if spaces == "X" || spaces == "O"
       counter += 1
     end
   counter
